@@ -13,9 +13,30 @@
 2. Active Directory Domain Services (AD DS): Enterprise-ready lightweight directory access protocol (LDAP)[^2] server that provides key features such as identity and authentication, computer object management, group policy, and trusts.
 3. Azure Active Directory Domain Services (Azure AD DS): Combination of Azure AD + Domain Services.
 
-## 
-- Traditional authentication mechanisms such as Kerberos or NTLM[^3]
-- 
+## Azure AD DS and Azure AD:
+- `On Azure AD-joined Devices: Authentication - modern OAuth / OpenID` Connect-based protocols for `mobile or desktop devices`.
+- `With Azure AD DS-joined devices: Authentication - Kerberos and New Technology LAN Manager (NTLM)` protocols to support `legacy applications ` & On-prem Server VMs deployed in Azure.
+
+
+## Investigate roles in Azure AD:
+- Azure AD-specific roles: `User, Application and Groups Administrator`
+- Service-specific roles: For non-Azure AD eg. ms 365, `Exchange ,Intune ,SharePoint, and Teams Administrator`
+- Cross-service roles: `Global Administrator and Global Reader, Security Administrator and Security Reader` (Microsoft 365 Defender portal, Microsoft Defender Advanced Threat Protection)
+- ![image](https://github.com/cybersome/Azure-Certifications-Guides/assets/40174034/19c6a777-d4ab-4eea-ae04-6f6415a8daaf)
+> Azure AD DS integrates with Azure AD, which can synchronize with an on-premises AD DS environment. This ability extends central identity use cases to traditional web applications that run in Azure as part of a lift-and-shift strategy.
+
+## Create and manage Azure AD users:
+- must be a User Administrator or Global Administrator.
+- Azure Portal > AZure AD > Users > Create new user or Invite external user
+- can also invite the new guest user to collaborate with your organization.
+- Delete a user: Azure Active Directory > Users > Azure AD tenant > Delete user.
+- Azure AD groups, you can grant access and permissions to a group of users instead of each individual user.
+
+
+## Implement passwordless authentication:
+-  Concept: something you have, plus something you are or something you know
+-  Hello for Business, Microsoft Authenticator, Fast Identity Online2 (FIDO2).
+
 
 
 
