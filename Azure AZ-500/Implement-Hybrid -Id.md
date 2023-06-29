@@ -10,6 +10,7 @@
 - Azure AD Connect features:
   - Password hash synchronization (sync & use hash of a user on on-prem & AD) `same sign-in, not single sign-on`
     - Use this feature to sign in to Azure AD services like Microsoft 365, Microsoft Intune, CRM Online, and Azure Active Directory Domain Services (Azure AD DS).
+    - This option just shares the password hash between two federated systems.
       
   - Pass-through authentication (Same pwd can be used on on-prem & AD)
     - alternative to Azure AD Password Hash Synchronization.
@@ -22,6 +23,8 @@
     
 ## Password writeback:
 - a feature enabled with Azure AD Connect that allows password changes in the cloud to be written back to an existing on-premises directory in real time.
+
+> Azure AD supports `SAML 2.0*, OpenID Connect*, OAuth 2.0*, and WS-Federation` protocols for authentication and authorization.
 
 
 
