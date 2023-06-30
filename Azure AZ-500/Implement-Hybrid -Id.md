@@ -1,7 +1,7 @@
 # Unit 2:
 
 ## Deploy Azure AD connect:
-- Hybrid Identity is the process of connecting your on-premises Active Directory with your Azure Active Directory.
+- Hybrid Identity is the `process of connecting your on-premises Active Directory with your Azure Active Directory`.
 
 ## Authentication methods:
 - Cloud Authentication (Azure AD password hash Sync, Azure AD Pass-through Auth)
@@ -24,7 +24,7 @@
 ## Password writeback:
 - a feature enabled with Azure AD Connect that allows password changes in the cloud to be written back to an existing on-premises directory in real time.
 
-> Azure AD supports `SAML 2.0[^1], OpenID Connect*, OAuth 2.0*, and WS-Federation` protocols for authentication and authorization.
+> Azure AD supports `SAML 2.0[^1], OpenID Connect[^2], OAuth 2.0[^3], and WS-Federation` protocols for authentication and authorization.
 > Single Sign-On (SSO) granting you seamless access without requiring multiple logins.
 
 
@@ -39,7 +39,6 @@
 
 
 
-
-
 [1^]: SAML 2.0, which stands for Security Assertion Markup Language 2.0, is a protocol used for exchanging authentication and authorization information between different systems. Used in SSO, Federation (To build trust between 2 orgs), Azure AD.
-[2^]: 
+[2^]:  OpenID, verifies the user from an identity provider (like Google or Facebook) & allows access/login to the site.
+[3^]: 
