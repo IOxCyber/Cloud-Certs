@@ -40,12 +40,11 @@
 - Hub Virtual Network: Vnets in Azure which serves as the hub. This VNet typically hosts shared services, such as firewalls, gateways, or network appliances.
 
   
-
-
-
-
-
-
+> Use forced tunneling to redirect internet bound traffic back to the company's on-premises infrastructure. Forced tunneling is commonly used in scenarios where organizations want to implement packet inspection or corporate audits. Forced tunneling in Azure is configured via virtual network user-defined routes (UDR).
+>
+> Application rules define fully qualified domain names (FQDNs) that can be accessed from a subnet. Usage of FQDNs would be appropriate to allow Windows Update network traffic.
+> 
+> Azure Firewall can limit the outbound IP addresses and ports that can be accessed. Define network rules that assign source address, protocol, destination port, and destination address.
 
 
 
