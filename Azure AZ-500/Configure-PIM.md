@@ -25,13 +25,22 @@
 - Eligible administrators have privileged access only when they need it
   
 
+## Quiz:
+- Global Admin. Of the options listed, only the Global Admin role has the permission to enable PIM.
+- Assign the user the Contributor role at the resource group level. This gives the new hire the least privileges necessary for the role.
+- Resource locks prevent other users in your organization from accidentally deleting or modifying critical resources.
+- Assign the user to the Contributor role on VM3. This means the user won't have access to VM1 or VM2
+- Management groups can be used to organize and manage subscriptions.
+- Resources can easily be moved between resource groups, so this is correct.
 
-
-
-
-
-
-
+## Policy permissions and custom policies:
+- Azure Policy has several permissions, known as operations, in two resource providers: 1. Microsoft.Authorization & 2.Microsoft.PolicyInsights
+- RBAC is an authorization system built on Azure Resource Manager that provides fine-grained access management of Azure resources.
+> a subscription is associated with only one Azure AD tenant. Also note that a resource group can have multiple resources but is associated with only one subscription. Lastly, a resource can be bound to only one resource group.
+- All Policy objects, including definitions, initiatives, and assignments, will be readable to all roles over its scope.
+- <img width="500" alt="image" src="https://github.com/cybersome/Azure-Certifications-Guides/assets/40174034/2ca33b88-5943-4e0f-a5cd-bef8f44c45db">
+> To create or delete management locks, you must have access to **Microsoft.Authorization/***or Microsoft.Authorization/locks/* actions.  
+- As an administrator, you may need to lock a subscription, resource group, or resource.
 
 
 
