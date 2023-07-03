@@ -57,5 +57,3 @@
 
 [^1]: ability of a network infrastructure to withstand and recover from disruptions or failures without significant impact on its functionality and performance.
 [^2]: Load balancers in Azure are network devices that distribute incoming network traffic across multiple servers or virtual machines to ensure efficient resource utilization and high availability.
-
-  
