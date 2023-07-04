@@ -2,7 +2,9 @@
 - protecting a valuable object with multiple security controls at each level.
 - includes various security controls such as firewalls, access controls, encryption, monitoring, and threat detection.
 - <img width="500" alt="image" src="https://github.com/cybersome/Azure-Certifications-Guides/assets/40174034/7ba53b3b-40ff-480c-9608-13d83e355fa1">
-
+- Azure Perimeter Network is a service that provides a `dedicated network connection between on-premises networks and Azure virtual networks`
+- Azure `Perimeter Network uses Azure Private Link technology` to establish a direct, secure, and isolated connection.
+ 
 ## Network Micro-Segmentation:
 - means `creating virtual "locks" or boundaries around different parts of network` to restrict access and prevent unauthorized communication between various components.
 - a way to `create secure zones in data centers` and Azure deployments that allow you to isolate workloads and protect them individually.
