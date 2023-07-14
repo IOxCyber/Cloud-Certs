@@ -15,8 +15,8 @@ Configure ExpressRoute to help protect your network traffic
 
 2. Deploy a Network Security Groups implementation:
 - 100 NSGs per region(Max 500) per subscription, 200 rules in a single NSG(Max 400). 
-- You can apply only one NSG to a VM, subnet, or network adapter.
-- You can apply an NSG to multiple resources.
+- You can `apply only one NSG to a VM, subnet, or network adapter.`
+- You can `apply an NSG to multiple resources.`
 - 
 
 
