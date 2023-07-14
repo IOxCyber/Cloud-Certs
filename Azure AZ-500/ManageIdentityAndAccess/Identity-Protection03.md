@@ -1,4 +1,4 @@
-# Unit 3:
+# Unit 3: Deploy AD protection
 
 ## Identity Protection:
 - a tool that allows organizations to automate the detection and remediation of identity-based risks
