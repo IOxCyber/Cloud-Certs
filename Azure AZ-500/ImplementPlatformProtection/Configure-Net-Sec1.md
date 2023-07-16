@@ -39,27 +39,48 @@
 - <img width="500" alt="image" src="https://github.com/IOxCyber/Azure-Certs/assets/40174034/fae2850e-8b27-4ef3-9e52-202058a63c68">
 - Private Link Service, Private Link Endpoint, Network Integration, Private IP Addressing, Security and Access Control, Service Publishing.
 
-6. Azure Application Gateway:
-- Web traffic load balancer and application delivery controller.
+6. Azure Application Gateway: `web traffic load balancer and application delivery controller`
+- Used for Web traffic load balancer and application delivery controller.
 - Operates at the application layer of the network stack & transport layer (OSI layer 4 - TCP and UDP)
 - <img width="500" alt="image" src="https://github.com/IOxCyber/Azure-Certs/assets/40174034/df1655df-2813-4472-b158-4661810a4a3e">
 - Features: `Secure Sockets Layer (SSL/TLS) termination, Autoscaling(Up&Down), Static VIP, Web Application Firewall, Ingress Controller for AKS, URL-based routing`
 
 
-7. WAF (Web Application Firewall):
-- 
+7. WAF (Web Application Firewall): `Fully Managed cloud-based firewall service`
+- Protects web applications from various types of cyber threats and attacks.
+- Traffic Monitoring, Threat Detection, Real-Time Blocking, Attack Mitigation, and Custom Security Policies.
 - <img width="500" alt="image" src="https://github.com/IOxCyber/Azure-Certs/assets/40174034/43ff3085-625a-48a3-b8ed-0638c2ac3ff1">
-- 
 
 
 
+8. Azure Front Door: `global content delivery network (CDN)[^3] and application delivery service`
+- `Acts as a gateway between users and your web applications`, improving their performance, availability, and security. 
+- Features: `Load Balancing, Intelligent Routing, SSL/TLS termination, Traffic Analytics and Monitoring`
 
 
+> Azure WAF is primarily focused on web application security.
+> Azure Front Door focuses on global content delivery(CDN) and intelligent routing.
+> Azure Application Gateway specializes in advanced application-level load balancing and traffic management.
+>
+> An application delivery services are Azure Front Door or Azure Application Gateway.
+
+9. Express Route:
+- a direct, private connection from your WAN (not over the public Internet) to Microsoft Services/Azure resources.
+- ExpressRoute provides a dedicated, secure, and high-performance connectivity option for extending your on-premises network to Azure.
+- <img width="500" alt="image" src="https://github.com/IOxCyber/Azure-Certs/assets/40174034/878f27bc-4e0c-4fa4-b1b6-cb5f510c9f67">
 
 
-
-
-
+## Other connectivity options to access Azure Services:
+```
+Public Internet Access
+Site-to-Site VPN, on-premises network to Azure virtual networks
+Point-to-Site VPN, points = individual client devices
+Azure Virtual WAN, remote locations to Azure
+Azure VPN Gateway:
+supports both Site-to-Site and Point-to-Site VPN
+cross-premises connectivity between your on-premises network and Azure
+```
+> Cross-premises connectivity refers to establishing a network connection between different locations, typically between an organization's on-premises network and a cloud environment like Azure
 
 
 
@@ -71,10 +92,9 @@
 
 [2]: Customer-owned services refer to services or resources that are owned and managed by the customer themselves. These services can be hosted in Azure or in an on-premises environment. 
 
+[3]: Global content delivery network (CDN) refers to a distributed network of servers located around the world that stores copies of web content(images, videos, scripts, and other static or dynamic files) & delivers to end-users with high performance and low latency.
 
-
-
-
-
-
+[4]: refers to a service or set of services that optimize the delivery of web applications to end-users. These services provide various capabilities to enhance the performance, availability, and security of web applications, ensuring a better user experience.
+or
+An application delivery service in Azure is like a specialized team that helps ensure your web applications reach users quickly, reliably, and securely.
 
