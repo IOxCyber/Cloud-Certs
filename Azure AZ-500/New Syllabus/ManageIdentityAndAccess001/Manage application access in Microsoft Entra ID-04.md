@@ -38,7 +38,16 @@ Type:
 > Microsoft Enterprise Application Proxy should be configured when there is a need to securely publish internal web applications to external users without exposing the application directly to the internet.
 
 
+Que:
+1.  To provide scoped access to the resources in your web API, you first need to register the API with the Microsoft identity platform.
 
+2.  Microsoft Entra ID supports extensive access management for configured applications, enabling organizations to easily achieve the right access policies ranging from automatic, attribute based assignment (ABAC) or RBAC scenarios through delegation and including administrator management. With Microsoft Entra ID, usage and assignment reporting is fully integrated, enabling administrators to easily report on assignment state, assignment errors, and even usage.
+
+3.  Implementing an authentication mechanism such as OAuth or OpenID Connect is the first step in ensuring that users are authenticated before accessing the web application, thereby protecting it from unauthorized access.
+
+4.  By registering the web API and exposing it through scopes, assigning an owner and app role, the developer can provide permissions-based access to authorized users and client apps that access the API.
+
+5.   Managed identities provide an automatically managed identity in Microsoft Entra ID for applications to use when connecting to resources that support Microsoft Entra authentication. Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials.
 
 
 
