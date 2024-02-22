@@ -20,11 +20,22 @@ Consent
  - An application object is used as a template or blueprint to create one or more service principal objects. A service principal is created in every tenant where the application is used. Similar to a class in object-oriented programming, the application object has some static properties that are applied to all the created service principals (or application instances).
  - 
 
- 
+ Service principal object: 
+ - The security principal defines the access policy and permissions for the user/application in the Microsoft Entra tenant. This enables core features such as authentication of the user/application during sign-in, and authorization during resource access.
+Types:
+ Application: This type of service principal is the local representation, or application instance, of a global application object in a single tenant or directory. 
+ Managed Identity: Managed identities eliminate the need for developers to manage credentials.
+ Legacy: 
+ > When an application is permitted to access resources in a tenant (upon registration or consent), a service principal object is created. 
 
+Managed Identity:
+- provide a secure way to authenticate and access Azure resources without the need to manage credentials manually.
 
+Type:
+- System-assigned Managed Identity is automatically created and managed by Azure for an Azure service instance, such as a virtual machine or Azure Function.
+- User-assigned Managed Identity is created and managed by the user and can be assigned to one or more Azure resources, allowing them to access Azure services securely.
 
-
+> Microsoft Enterprise Application Proxy should be configured when there is a need to securely publish internal web applications to external users without exposing the application directly to the internet.
 
 
 
