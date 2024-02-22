@@ -43,9 +43,16 @@
 - ![image](https://github.com/IOxCyber/Azure-Certs/assets/40174034/60459f2e-4ed1-4941-bdb4-0cf85d721ea4)
 
 
+## Ques:
+1. B2B collaboration allows external users to sign in to the organization using their own credentials and access the apps and resources shared with them.
 
+2. Based on the detected risk level, risk-based Conditional Access policies can be enabled to require access controls such as providing a strong authentication method, perform multifactor authentication, or perform a secure password reset.
 
+3. Microsoft Entra entitlement management is an identity governance feature that lets you manage identity and access for external users at scale by automating access request workflows, access assignments, reviews, and expiration.
 
+4. As part of the sign-up flow, a company can provide options for different social or enterprise identity providers.
+
+5. The User Administrator must sign in to the Azure portal in the User Administrator role, navigate to Microsoft Entra ID Users, and select either Create new user or Invite external user from the menu to add a new user to their Microsoft Entra ID organization
 
 
 
