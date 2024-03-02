@@ -25,7 +25,12 @@ VPN Gateway: Establishes a secure connection between an on-premises network and 
 ExpressRoute: Provides a private, dedicated connection between an on-premises network and Azure data centers, offering higher reliability, faster speeds, and lower latencies compared to VPN connections.
 
 
-
+## Plan and implement security for storage:
+- Azure Key Vault makes it easy to rotate your keys without interruption to your applications and provides secure management of your access keys.
+- Azure Key Vault provides a secure way to manage and rotate storage account access keys, which should be done regularly to maintain security.
+- Microsoft recommends that clients use either Microsoft Entra ID or a shared access signature SAS to authorize access to data in Azure Storage.
+- Authorization ensures that resources are secure and only accessible to authorized users or applications.
+- BYOK is used to securely transfer an existing key from an on-premises HSM to Azure Key Vault for secure storage and management.
 
 
 
