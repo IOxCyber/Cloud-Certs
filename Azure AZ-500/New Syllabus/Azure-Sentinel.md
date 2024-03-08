@@ -12,7 +12,8 @@
   - 'Syslog' stream events from Linux-based, Syslog-supporting devices into Microsoft Sentinel using the Azure Monitor Agent (AMA), receives events from the Syslog daemon over UDP.
   - Common Event Format (CEF): data appears in the CommonSecurityLog table.
   - Custom logs, Service-to-service integration for data connectors for AWS & Azure.
-  - Deploy data connectors as part of a solution
+  - Deploy data connectors as part of a solution.
+  - `syslog, Common Event Format (CEF), Trusted Automated eXchange of Indicator Information (TAXII) (for threat intelligence), Azure, AWS services`
 
  5. After connecting your data sources to Microsoft Sentinel, `create custom analytics rules to help discover threats and anomalous behaviors in your environment.`
 
