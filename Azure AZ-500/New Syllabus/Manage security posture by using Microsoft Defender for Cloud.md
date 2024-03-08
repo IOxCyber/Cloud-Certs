@@ -36,7 +36,8 @@ WHOIS Contacts
 - It recursively search for `infrastructure with observed connections to known legitimate assets, known as discovery "seeds"`
 - Users that have been assigned either Owner or Contributor roles can create, delete, and edit Defender EASM resources and the inventory assets within it.
 
-
+12. Microsoft Defender for Cloud is a multicloud security solution. It provides native CSPM capabilities for Azure, AWS, and Google Cloud environments and supports threat protection across these platforms. You can also connect non-Azure workloads in hybrid scenarios by using Azure Arc.
+13. Microsoft Defender for Storage, Databases, Containers, App Service, Key Vault, Resource Manager, and DNS.
 
 
 
