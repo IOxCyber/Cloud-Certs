@@ -3,6 +3,7 @@
 3. `Activity log data in a Log Analytics workspace is stored in a table` called `AzureActivity` that you can retrieve with a log query in Log Analytics, Activity log events are retained in the Azure platform for 90 days.
 4. Azure Sentinel:
 - Azure Sentinel, Microsoft's cloud-native SIEM solution, utilizes AI and ML to analyze diverse data sources like logs and alerts, enabling real-time detection and response to security threats.
+- `Log Analytics is Azure service that stores the log data` that is ingested into Microsoft Sentinel that stores the log data for Microsoft Sentinel.
 - After you onboard Microsoft Sentinel into your workspace, use `data connectors to start ingesting your data into Microsoft Sentinel.`
 - Built-in connectors enable connection to the broader security ecosystem for non-Microsoft products.
 - To add more data connectors, install the solution associated with the data connector from the Content Hub.
