@@ -9,5 +9,6 @@
 - Communication over internal IPs is cheaper than Public IP.
 ![image](https://github.com/IOxCyber/Azure-Certs/assets/40174034/d3b7153c-f8f2-456f-b46e-11615d96db85)
 
+- https://partner.cloudskillsboost.google/catalog_lab/1032
 
 3. 
