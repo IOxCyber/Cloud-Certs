@@ -13,10 +13,12 @@
 
 3. Network and Security Admin roles:
 Network Admin: `Permissions to create, modify, and delete networking resources`, except for firewall rules and SSL certificates.
+- Network Admin role has permissions to list but not modify/delete firewall rules.
+- 
 Security Admin: `Permissions to create, modify, and delete firewall rules and SSL certificates.`
 
 
-4. 
+5. 
 
 
 
@@ -26,5 +28,5 @@ Security Admin: `Permissions to create, modify, and delete firewall rules and SS
 - you are only able to HTTP access the external IP address of the blue server as the allow-http-web-server only applies to VM instances with the web-server tag.
 - the `Compute Engine default service account`, which is enabled on all instances created by Cloud Shell command-line and the Cloud Console.
 - the `Compute Engine default service account` does not have the right permissions to allow you to list or delete firewall rules.
-- Network Admin role has permissions to list but not modify/delete firewall rules.
+- 
 - 
