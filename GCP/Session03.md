@@ -17,10 +17,11 @@
 
 
 7.
-
-
-8.
+- The Hostname and Server Location identifies where the HTTP Load Balancer sends traffic.
+- 
 
 9.
 
 10.
+
+11.
