@@ -25,17 +25,19 @@
 
 
 ## Secure external identities: 
-1. `B2B collaboration` is a feature within `Microsoft Entra External ID that lets you invite guest users` to collaborate with your organization even if they don't have Microsoft Entra ID or an IT department.
+1. `B2B Collaboration:` `Allow sign-up with a work, school, or social identity (like Google or Facebook).`
+- Microsoft Entra External ID that lets you `invite guest users to collaborate` with your organization even if they don't have Microsoft Entra ID or an IT department.
 ![image](https://github.com/IOxCyber/Azure-Certs/assets/40174034/3fc154c5-1243-4a06-8fe1-f1fbda0bcd8f)
 
-2. `B2B direct connect - Establish a mutual, two-way trust with another Microsoft Entra organization` for seamless collaboration. `Supported Team channels only.`
+2. `B2B Direct Connect`: `Supported Team channels Only`
+- Establish a mutual, two-way trust with another Microsoft Entra organization for seamless collaboration. 
 
 3. `Microsoft Entra B2C - Publish modern SaaS apps or custom-developed apps (excluding Microsoft apps) to consumers and customers`, while using Microsoft Entra B2C for identity and access management `with Customer Identity and Access Management (CIAM) solution.`
 
 > Microsoft Entra B2C is built on the same technology as Microsoft Entra External ID, it's a separate service with some feature differences.
 
-4. Microsoft Entra multitenant organization - Collaborate with multiple tenants in a single Microsoft Entra organization via cross-tenant synchronization.
-
+4. `Microsoft Entra multitenant organization` - Collaborate with multiple tenants in a single Microsoft Entra organization via cross-tenant synchronization.
+![image](https://github.com/IOxCyber/Cloud-Certs/assets/40174034/66bdb2c6-2212-486b-99d5-8ce4b27fec27)
 
 ## Implement Microsoft Entra Identity protection:
 - Microsoft Entra ID Protection helps organizations detect, investigate, and remediate identity-based risks.
