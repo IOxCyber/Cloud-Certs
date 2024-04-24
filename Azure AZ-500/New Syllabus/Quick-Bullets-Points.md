@@ -11,5 +11,6 @@
 11. `Secure Score: How good the security porture` A feature in Azure Security Center that provides a score based on an organization’s security posture and provides recommendations to improve security.
 12. Threat Intelligence: Information about potential or actual security threats, such as indicators of compromise (IOCs) and malicious URLs, that can be used to improve security defenses.
 13. Virtual Private Network (VPN): A secure connection between two networks that allows remote access to a private network, such as an Azure Virtual Network.
-
+14. Organizations can enforce Conditional Access policies for external B2B collaboration and B2B direct connect users in the same way that they're enabled for full-time employees and members of the organization.
+15. 
 
