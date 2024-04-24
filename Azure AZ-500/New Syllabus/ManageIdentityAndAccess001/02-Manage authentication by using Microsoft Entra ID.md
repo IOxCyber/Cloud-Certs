@@ -21,6 +21,20 @@ Something you have, such as a trusted device that is not easily duplicated, like
 Something you are - biometrics like a fingerprint or face scan.
 ```
 
+- The following additional forms of verification can be used with Microsoft Entra multifactor authentication:
+```
+Microsoft Authenticator
+Authenticator Lite (in Outlook)
+Windows Hello for Business
+FIDO2 security key
+OATH hardware token (preview)
+OATH software token
+SMS
+Voice call
+```
+
+> Microsoft Authenticator can be used to sign in to any Microsoft Entra account without using a password. Microsoft Authenticator uses key-based authentication to enable a user credential that is tied to a device.
+
 ## Microsoft Entra multifactor authentication settings are available in the Azure portal:
 ![image](https://github.com/IOxCyber/Azure-Certs/assets/40174034/7806eec0-8377-490c-8933-cbecbba7f652)
 
@@ -62,7 +76,12 @@ Fast Identity Online2 (FIDO2) security keys.
 - It's important to have processes in place to renew certificates prior to their expiration, and to identify the right roles and email distribution lists involved with managing the lifecycle of the signing certificate. The certificate duration can be changed in the Microsoft Entra admin center.
 - The purpose of using Microsoft Entra Verified ID service for verification is to unlock privileges to subjects that possess verified credential expert cards.
 - The purpose of using Microsoft Entra Verified ID service for verification is to unlock privileges to subjects that possess verified credential expert cards.
+- You need an Azure tenant with an active subscription to impl.
+- Advanced Verified ID setup is the classic way of setting up Verified ID where you as an admin have to configure Azure KeyVault, take care of registering your decentralized ID and verifying your domain.
+- Microsoft Entra Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization.
 
+### Legacy authentication doesn't support things like multifactor authentication (MFA):
+- ![image](https://github.com/IOxCyber/Cloud-Certs/assets/40174034/90fabb1e-6265-45c8-a844-c46f59c0fb29)
 
 
 
