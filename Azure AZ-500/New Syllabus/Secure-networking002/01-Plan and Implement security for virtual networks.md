@@ -43,8 +43,28 @@
 - A secured virtual hub is an Azure Virtual WAN Hub with associated security and routing policies configured by Azure Firewall Manager.
 
 ## Azure Storage firewalls and virtual networks:
+- Storage accounts have a public endpoint that's accessible through the internet. You can also create private endpoints for your storage account.
+- The Azure Storage firewall provides access control for the public endpoint of your storage account.
+
+- **Note**: Storage firewall rules apply to the public endpoint of a storage account. You don't need any firewall access rules to allow traffic for private endpoints of a storage account.
+
+## Azure control plane and data plane:
+- Azure operations can be divided into two categories - control plane and data plane. 
+- The `control plane manages the configuration and operation of Azure resources`.
+- The `data plane handles the actual data processing and traffic flow within Azure.`
+
+### Examples:
+- You create a virtual machine through the control plane. After the virtual machine is created, you interact with it through data plane operations, such as Remote Desktop Protocol (RDP).
+- You create a storage account through the control plane. You use the data plane to read and write data in the storage account.
+
+> Azure Storage firewall rules only apply to data plane operations. Control plane operations are not subject to the restrictions specified in firewall rules.
 
 
+## Network security group (NSG) flow logging:
+- a feature of Azure Network Watcher that allows you to log information about IP traffic flowing through a network security group.
+- Flow data is sent to Azure Storage from where you can access it and export it to any visualization tool, security information and event management (SIEM) solution, or intrusion detection system (IDS).
+- Flow logs operate at Layer 4 of the Open Systems Interconnection (OSI) model and record all IP flows going in and out of a network security group.
+- Logs are collected at 1-minute intervals through the Azure platform in JSON, retent in 1 year.
 
 
 
