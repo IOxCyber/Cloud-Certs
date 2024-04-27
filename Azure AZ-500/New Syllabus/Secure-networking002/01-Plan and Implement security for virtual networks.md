@@ -16,9 +16,15 @@
 
 ## Virtual network connection types in Azure:
 1. `Virtual Network Peering: Connects two virtual networks in the same Azure region,` enabling seamless communication between resources in those networks.
+
 2. (Virtual Network-to-Virtual Network) `VNet-to-VNet connection: Links two virtual networks across Azure regions`, allowing resources in different regions to communicate securely.
-3. `VPN Gateway: Establishes a secure connection between an on-premises network and an Azure virtual network, enabling hybrid connectivity` and extending on-premises networks to Azure.
-4. `ExpressRoute: Provides a private, dedicated connection between an on-premises network and Azure data centers`, offering higher reliability, faster speeds, and lower latencies compared to VPN connections.
+
+3. `VPN Gateway: Establishes a secure connection between an on-premises network and an Azure virtual network, enabling hybrid connectivity` and extending on-premises networks to Azure over the public Internet.
+- Azure VPN Gateway supports both site-to-site VPN and point-to-site VPN connections.
+- S2S: Establishes a secure and encrypted connection between your on-premises VPN device (such as a router or VPN appliance) and the Azure VPN Gateway.
+- P2S: Individual client devices (such as laptops or desktop computers) can securely connect to your Azure virtual network over the internet. Uses OpenVPN® Protocol, an SSL/TLS based VPN protocol,  Secure Socket Tunneling Protocol (SSTP), a proprietary TLS-based VPN protocol, IKEv2 VPN, a standards-based IPsec VPN solution.
+
+4. `ExpressRoute: Provides a private, dedicated connection between an on-premises network and Azure data centers`, offering higher reliability, faster speeds, and lower latencies compared to VPN connections. By default traffic over an ExpressRoute connection isn't encrypted.
 
 > A network security group contains as many rules as desired, within Azure subscription limits.
 > Augmented security rules simplify security definition for virtual networks, allowing you to define larger and complex network security policies, with fewer rules.
@@ -32,7 +38,11 @@
 - BYOK is used to securely transfer an existing key from an on-premises HSM to Azure Key Vault for secure storage and management.
 
 
+## Secure Virtual Hub:
+- A virtual hub is a Microsoft-managed virtual network that enables connectivity from other resources.
+- A secured virtual hub is an Azure Virtual WAN Hub with associated security and routing policies configured by Azure Firewall Manager.
 
+## Azure Storage firewalls and virtual networks:
 
 
 
