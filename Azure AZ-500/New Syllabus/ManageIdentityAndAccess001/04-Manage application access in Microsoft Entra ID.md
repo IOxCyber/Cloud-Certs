@@ -1,18 +1,22 @@
 ## Access scenarios
-- Delegated access requires delegated permissions. Both the client and the user must be authorized separately to make the request.
-
-- App-only access (Access without a user): Application access is used in scenarios such as automation, and back up. This scenario includes apps that run as background services or daemons.
+- `Delegated access (access on behalf of a user)`: Delegated access requires delegated permissions. Both the client and the user must be authorized separately to make the request.
+- Scopes are permissions for a given resource that represent what a client application can access on behalf of the user.
+- `Appliction only access (Access without a user)`: Application access is used in scenarios such as automation, and back up. This scenario includes apps that run as background services or daemons.
+- Resource owners can `preauthorize client apps in the Azure portal or by using PowerShell and APIs, like Microsoft Graph.`
+- `Application permissions, sometimes called app roles` are used in the app-only access scenario, without a signed-in user present. 
 
 Types of permissions:
 - ![image](https://github.com/IOxCyber/Azure-Certs/assets/40174034/65c70f77-d24b-465a-b6fd-0c58fbba8517)
 
-- Application permissions, sometimes called app roles are used in the app-only access scenario, without a signed-in user present. 
-
 ## Consent:
--  Consent is a process where users or admins authorize an application to access a protected resource.
+-  Consent is `a process where users or admins authorize an application to access a protected resource.`
 -  User consent happens when a user attempts to sign into an application. The user provides their sign-in credentials.
 -  epending on the permissions they require, some applications might require an administrator to be the one who grants consent.
--  Preauthorization allows a resource application owner to grant permissions without requiring users to see a consent prompt for the same set of permissions that have been preauthorized.
+-  Preauthorization allows a resource application owner to grant permissions without requiring users to see a consent prompt for the same set of permissions that have been reauthorized.
+
+## Configure how users consent to applications:
+- 3 ways: 1. MS Entra admin center, 2. MS Graph Powershell, 3. MS Graph API
+- You need `A user account with A Global Administrator role.`
 
 
 ## Application registration:
@@ -21,8 +25,9 @@ Types of permissions:
   
 
  ## Service principal object: 
- - The security principal defines the access policy and permissions for the user/application in the Microsoft Entra tenant. This enables core features such as authentication of the user/application during sign-in, and authorization during resource access.
-Types:
+ - The `security principal defines the access policy and permissions for the user/application` in the Microsoft Entra tenant.
+ - This enables core features such as authentication of the user/application during sign-in, and authorization during resource access.
+### Types:
 - Application: This type of service principal is the local representation, or application instance, of a global application object in a single tenant or directory. 
 - Managed Identity: Managed identities eliminate the need for developers to manage credentials.
 - Legacy: 
@@ -39,19 +44,9 @@ Types:
 
 
 ## Grant tenant-wide admin consent to an application:
-- 3 ways: 1. MS entra admin center, 2. MS Graph Powershell, 3. MS Graph API
+- 3 ways: 1. MS Entra admin center, 2. MS Graph Powershell, 3. MS Graph API
 - `Granting tenant-wide admin consent may revoke permissions that have already been granted tenant-wide for that application. Permissions that users have already granted on their own behalf aren't affected.`
 - To grant tenant-wide admin consent, you need: `Any One Role: Global Administrator or Privileged Role Administrator, Cloud Application Administrator or Application Administrator, A custom directory role that includes the permission to grant permissions to applications`
-
-
-
-
-
-
-
-
-
-
 
 
 Que:
