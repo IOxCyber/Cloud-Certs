@@ -70,6 +70,7 @@
 - Encrypts the OS and data disks of Azure virtual machines (VMs) inside your VMs.
 - Uses the `DM-Crypt feature of Linux` or the `BitLocker feature of Windows`.
 - ADE is integrated with Azure Key Vault to help you control and manage the disk encryption keys and secrets.
+- `Azure Disk Encryption is zone resilient, the same way as Virtual Machines.`
 - helps protect and safeguard your data to meet your organizational security and compliance commitments.
 
 ## 4. Confidential disk encryption: `protected disk content accessible only to the binded VM`
@@ -85,6 +86,12 @@
 - Windows virtual machines should enable Azure Disk Encryption or EncryptionAtHost (Detects both Azure Disk Encryption and EncryptionAtHost)
 - Linux virtual machines should enable Azure Disk Encryption or EncryptionAtHost (Detects both Azure Disk Encryption and EncryptionAtHost)
 
+> Azure Disk Encryption is not available on Basic, A-series VMs, or on virtual machines with a less than 2 GB of memory.
+
+# Azure security baseline for API Management:
+- The Microsoft cloud security benchmark provides recommendations on how you can secure your cloud solutions on Azure.
+- The content is grouped by the security controls defined by the Microsoft cloud security benchmark.
+- Can monitor this security baseline and its recommendations using Microsoft Defender for Cloud.
 
 
 ## Points:
