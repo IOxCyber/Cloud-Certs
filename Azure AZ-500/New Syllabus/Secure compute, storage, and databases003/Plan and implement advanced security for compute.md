@@ -58,6 +58,32 @@
 
 > Log alerts allow you to alert on your data plane and control plane logs. 
 
+# Overview of managed disk encryption options:
+## 1. Azure Disk Storage Server-Side Encryption (AKA `encryption-at-rest or Azure Storage encryption)`
+- Always enabled and automatically encrypts data stored on Azure managed disks (OS and data disks), supports customer-managed keys as well.
+
+## 2. Encryption at host: `can be combined with Azure Storage Encryption to ensure Encryption at rest and flow`
+- a Virtual Machine option.
+- Enhances Azure Disk Storage Server-Side Encryption to `ensure that all temp disks and disk caches are encrypted at rest and flow encrypted` to the Storage clusters.
+
+## 3. Azure Disk Encryption: `encrypts the OS and data disks of Azure virtual machines (VMs) inside your VMs `
+- Encrypts the OS and data disks of Azure virtual machines (VMs) inside your VMs.
+- Uses the `DM-Crypt feature of Linux` or the `BitLocker feature of Windows`.
+- ADE is integrated with Azure Key Vault to help you control and manage the disk encryption keys and secrets.
+- helps protect and safeguard your data to meet your organizational security and compliance commitments.
+
+## 4. Confidential disk encryption: `protected disk content accessible only to the binded VM`
+- Binds disk encryption keys to the virtual machine's TPM` and makes the protected disk content accessible only to the VM.
+
+> Customer control of keys ✅ When configured with DES (All of the Encryption Options)
+> HSM Support: with Azure Key Vault Premium and Managed HSM.
+
+- ![image](https://github.com/IOxCyber/Cloud-Certs/assets/40174034/60e068c6-5848-4b71-83cd-c860bcdd0d7b)
+
+### Note: Microsoft Defender for Cloud has the following disk encryption recommendations:
+- Virtual machines should encrypt temp disks, caches, and data flows between Compute and Storage resources (Only detects Azure Disk Encryption)
+- Windows virtual machines should enable Azure Disk Encryption or EncryptionAtHost (Detects both Azure Disk Encryption and EncryptionAtHost)
+- Linux virtual machines should enable Azure Disk Encryption or EncryptionAtHost (Detects both Azure Disk Encryption and EncryptionAtHost)
 
 
 
