@@ -10,7 +10,15 @@
 - Types of classification:  System (200+) & Custom Type
 
 ## Auditing for Azure SQL Database and Azure Synapse Analytics: 
-- 
+- Auditing for Azure SQL Database and Azure Synapse Analytics tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace, or Event Hubs.
+
+```
+Limitations:
+
+Enabling auditing on a paused Azure Synapse SQL pool isn't supported. To enable auditing, resume the Synapse SQL pool.
+Enabling auditing by using User Assigned Managed Identity (UAMI) isn't supported on Azure Synapse.
+Currently, managed identities are not supported for Azure Synapse, unless the storage account is behind a virtual network or firewall.
+```
 
 1. Data Map:
 -  A `cloud native PaaS service that captures metadata about enterprise data present in analytics and operation systems on-premises and cloud.`
@@ -37,8 +45,22 @@
 - This includes admin users or roles such as sysadmin, serveradmin, db_owner etc.****
 
 
+## Always Encrypted:
+- `Applies to:  SQL Server  Azure SQL Database  Azure SQL Managed Instance`
+- ### `Always Encrypted is a feature designed to protect sensitive data` stored in Azure SQL Database, Azure SQL Managed Instance, and SQL Server databases.
+- Such as credit card numbers or national/regional identification numbers (for example, U.S. social security numbers).
 
+## Database permissions:
+```
+There are four database permissions for Always Encrypted:
 
+ALTER ANY COLUMN MASTER KEY - required to create and delete column master key metadata.
 
+ALTER ANY COLUMN ENCRYPTION KEY - required to create and delete column encryption key metadata.
 
+VIEW ANY COLUMN MASTER KEY DEFINITION - required to access and read the column master key metadata, which is needed to query encrypted columns.
+
+VIEW ANY COLUMN ENCRYPTION KEY DEFINITION - required to access and read the column master key metadata, which is needed to query encrypted columns.
+```
+![image](https://github.com/IOxCyber/Cloud-Certs/assets/40174034/594835a2-f9b3-4cb8-9155-abe6a6cf488b)
 
