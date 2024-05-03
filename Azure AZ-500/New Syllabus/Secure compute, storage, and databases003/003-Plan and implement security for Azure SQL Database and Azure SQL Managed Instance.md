@@ -64,3 +64,5 @@ VIEW ANY COLUMN ENCRYPTION KEY DEFINITION - required to access and read the colu
 ```
 ![image](https://github.com/IOxCyber/Cloud-Certs/assets/40174034/594835a2-f9b3-4cb8-9155-abe6a6cf488b)
 
+
+EOF.s
