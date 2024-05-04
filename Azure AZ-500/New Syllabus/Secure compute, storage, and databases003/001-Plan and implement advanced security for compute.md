@@ -56,7 +56,11 @@
 ### Two types of metric rules used by Container insights:
 - `Prometheus metrics based alerts` AND `Platform metric based alerts`
 
-> Log alerts allow you to alert on your data plane and control plane logs. 
+> Log alerts allow you to alert on your data plane and control plane logs.
+>
+> Control Plane: handles tasks related to resource deployment, management, and governance.
+- &
+> Data Plane: handling the data flow and processing requests from users or applications.
 
 # Overview of managed disk encryption options:
 ## 1. Azure Disk Storage Server-Side Encryption (AKA `encryption-at-rest or Azure Storage encryption)`
