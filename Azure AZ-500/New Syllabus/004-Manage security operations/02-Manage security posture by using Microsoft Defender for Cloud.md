@@ -6,11 +6,9 @@
 - Microsoft Defender for Cloud is a multicloud security solution. It `provides native CSPM capabilities for Azure, AWS, and Google Cloud environments and supports threat protection across these platforms.` You can also connect non-Azure workloads in hybrid scenarios by using Azure Arc.
 
 ## Defender for Cloud combines the capabilities of:
-```
-A development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple-pipeline environments
-A cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches
-A cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads.
-```
+- A development security operations `(DevSecOps) solution` that unifies security management `at the code level across multicloud and multiple-pipeline environments`
+- A cloud security posture management `(CSPM) solution` that surfaces `actions that you can take to prevent breaches`
+- A cloud workload protection platform `(CWPP)` with `specific protections for servers, containers, storage, databases, and other workloads.`
 
 ## Azure Arc:
 - You can connect your non-Azure computers in any of the following ways:
@@ -40,7 +38,6 @@ WHOIS Contacts
 ## Protect cloud workloads:
 - ![image](https://github.com/IOxCyber/Cloud-Certs/assets/40174034/ed432c13-f28a-44e1-bad1-f7b1401f2046)
 
-
 ## Defender for Cloud Usages: 
 - Defender for Containers > `At least one Amazon EKS cluster with permission to access to the EKS Kubernetes API server > The resource capacity to create a new Amazon SQS queue > Kinesis Data Firehose delivery stream > Amazon S3 bucket in the cluster's region.`
 - Defender for SQL > Microsoft Defender for `SQL enabled on your subscription > An active AWS account, with EC2 instances running SQL Server or RDS Custom for SQL Server > Azure Arc for servers installed on your EC2 instances or RDS Custom for SQL Server.`
@@ -59,4 +56,6 @@ WHOIS Contacts
 ## Secure score in Defender for Cloud: `The higher the score, the lower the identified risk level is.`
 - The secure score aggregates security findings into a single score(<100) so that you can assess, at a glance, your current security situation. 
 
+## 
+- Compliance data from Defender for Cloud now seamlessly integrates with Microsoft Purview Compliance Manager, allowing you to centrally assess and manage compliance across your organization's entire digital estate.
 
