@@ -1,7 +1,4 @@
-1. The `Azure Monitor activity log is a platform log in Azure` that provides insight into subscription-level events, Activity log events are retained in Azure for 90 days and then deleted.
-2. A `Log Analytics workspace is a centralized repository and analytics engine in Azure Monitor` that collects and analyzes telemetry data from various sources, including applications, servers, virtual machines, containers, and other resources across hybrid and multi-cloud environments.
-3. `Activity log data in a Log Analytics workspace is stored in a table` called `AzureActivity` that you can retrieve with a log query in Log Analytics, Activity log events are retained in the Azure platform for 90 days.
-4. Azure Sentinel:
+# Azure Sentinel: `SIEM & SOAR Tool`
 - Azure Sentinel, Microsoft's cloud-native SIEM solution, utilizes AI and ML to analyze diverse data sources like logs and alerts, enabling real-time detection and response to security threats.
 - `Log Analytics is Azure service that stores the log data` that is ingested into Microsoft Sentinel that stores the log data for Microsoft Sentinel.
 - After you onboard Microsoft Sentinel into your workspace, use `data connectors to start ingesting your data into Microsoft Sentinel.`
@@ -16,12 +13,18 @@
   - Deploy data connectors as part of a solution.
   - `syslog, Common Event Format (CEF), Trusted Automated eXchange of Indicator Information (TAXII) (for threat intelligence), Azure, AWS services`
 
- 5. After connecting your data sources to Microsoft Sentinel, `create custom analytics rules to help discover threats and anomalous behaviors in your environment.`
 
- 6. `The size limit for an entire alert is 64 KB.`
- 7. `Up to 150 alerts can be grouped into a single incident.`
+## 1. The `Azure Monitor activity log is a platform log in Azure` that provides insight into subscription-level events, Activity log events are retained in Azure for 90 days and then deleted.
+
+## 2. A `Log Analytics workspace is a centralized repository and analytics engine in Azure Monitor` that collects and analyzes telemetry data from various sources, including applications, servers, virtual machines, containers, and other resources across hybrid and multi-cloud environments.
+## 3. `Activity log data in a Log Analytics workspace is stored in a table` called `AzureActivity` that you can retrieve with a log query in Log Analytics, Activity log events are retained in the Azure platform for 90 days.
+
+## 4. After connecting your data sources to Microsoft Sentinel, `create custom analytics rules to help discover threats and anomalous behaviors in your environment.`
+
+## 5. `The size limit for an entire alert is 64 KB.`
+## 6. `Up to 150 alerts can be grouped into a single incident.`
  
- 8. Configure automation in Microsoft Sentinel:
+**** 8. Configure automation in Microsoft Sentinel:
 - Playbooks `sequences of automated steps or actions designed to execute specific security workflows or response processes in response to security incidents.`
 - Playbooks are collections of procedures that can be run from Microsoft Sentinel in response to an entire incident, to an individual alert, or to a specific entity.
 - `In order to trigger the playbook, you'll then create an automation rule.`
