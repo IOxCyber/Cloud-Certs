@@ -40,7 +40,7 @@
 - Outbound: AllowVnetOutBound, `AllowInternetOutBound,` DenyAllOutBound`
 > You `can't remove the default rules, but you can override them by creating rules with higher priorities.`
 
-31. 
+31. g
 
 
 
