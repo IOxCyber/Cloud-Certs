@@ -1,5 +1,4 @@
-## 1. You can enable `Facebook or Google accounts to be used to access Azure subscriptions,` but `only Google identities can be used for B2B`, No Twitter or AWS accounts to access Azure resources.
-
+1. You can enable `Facebook or Google accounts to be used to access Azure subscriptions,` but `only Google identities can be used for B2B`, No Twitter or AWS accounts to access Azure resources.
 2. An `administrative unit can contain only users, groups, and devices`. You can also give role management rights to the resources in an administrative unit.
 3. `Resource groups cannot contain users, groups, or devices.`
 4. `Management groups can only contain other management groups or subscriptions`. Departments are used for billing.
@@ -40,7 +39,30 @@
 - Outbound: AllowVnetOutBound, `AllowInternetOutBound,` DenyAllOutBound`
 > You `can't remove the default rules, but you can override them by creating rules with higher priorities.`
 
-31. g
+###
+
+31. Microsoft.Network/virtualNetworks/virtualNetworkPeerings/write and Microsoft.Network/virtualNetworks/peer/action are the required permissions for resource manager operations.
+32. Microsoft.ClassicNetwork/virtualNetworks/peer/action is only for classic interface operations. Microsoft.Network/virtualNetworks/join/action is not for peering features.
+33. Microsoft.Network/privateDnsZones/* is for DNS.
+34. A private link service will allow access from outside the virtual network to an endpoint by using NAT.
+35. `For different regions, cannot use regional integration; you can use only gateway-required virtual network integration.` To be able to implement this type of integration, you must first deploy a virtual network gateway in VNet1.
+36. `Service Endpoint provides secure and direct access to Azure services` over a private connection `within a subnet of your virtual network`
+37. Private Link allows you to access Azure Platform-as-a-Service (PaaS) services privately from your virtual network. It enables you to connect to services over a private endpoint within your VNet.
+### > Service Endpoints are typically used for accessing Azure services like Azure Storage, Azure SQL Database, and Azure Cosmos DB from within a VNet, `while Private Link is more suitable for accessing PaaS services like Azure Blob Storage, Azure SQL Database, Azure App Service, etc., privately from your VNet.`
+38. `Azure backbone network is the underlying infrastructure that connects all Azure data centers globally.` It's a high-speed, resilient network that ensures reliable and low-latency connectivity between Azure services, regions, and data centers.
+39. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
