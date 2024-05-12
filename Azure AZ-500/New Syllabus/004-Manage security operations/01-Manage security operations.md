@@ -47,7 +47,7 @@ Virtual machines: Provision, resize, delete and manage virtual machines based on
 - Both Contributor and Reader have access to all read Azure Policy operations.
 > All Policy objects, including definitions, initiatives, and assignments, will be readable to all roles over its scope. 
 
-## 5. Azure Dedicated S/W Security Module(HSM): `Azure service that provides cryptographic key storage in Azure`
+## 5. Azure Dedicated H/W Security Module(HSM): `Azure service that provides cryptographic key storage in Azure`
 - Dedicated HSMs provide a high level of security for cryptographic operations and key management by physically isolating and protecting keys from unauthorized access.
 - `Offers FIPS 140-2 Level 3-validated cryptographic key storage globally, ensuring exclusive control and high availability across Azure regions with Thales Luna 7 HSM appliances, accessible via VPN for on-premises integration and managed through Thales customer support.`
 - Azure Dedicated HSM isn't ideal for scenarios where Microsoft cloud services utilize customer-managed encryption keys but lack integration with Azure Dedicated HSM.
