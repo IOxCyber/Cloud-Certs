@@ -50,19 +50,41 @@
 37. Private Link allows you to access Azure Platform-as-a-Service (PaaS) services privately from your virtual network. It enables you to connect to services over a private endpoint within your VNet.
 ### > Service Endpoints are typically used for accessing Azure services like Azure Storage, Azure SQL Database, and Azure Cosmos DB from within a VNet, `while Private Link is more suitable for accessing PaaS services like Azure Blob Storage, Azure SQL Database, Azure App Service, etc., privately from your VNet.`
 38. `Azure backbone network is the underlying infrastructure that connects all Azure data centers globally.` It's a high-speed, resilient network that ensures reliable and low-latency connectivity between Azure services, regions, and data centers.
-39. 
+39. `Azure SQL managed instance requires an empty subnet`, meaning it cannot have any existing resources deployed within the subnet. This ensures that the managed instance has exclusive use of the subnet's IP address space and does not conflict with other resources.
+40. `Application Gateway is a web traffic load balancer that enables you to manage traffic to web apps.` Application Gateway works at Layer 7, which enables routing based on path or host headers as well as SSL off-loading.
 
+###
 
+41. Front Door is implemented globally. Azure Front Door is a global, scalable, and secure entry point for web applications, APIs, and content delivery, provides Global Load Balancing, Web Application Firewall (WAF), SSL Offloading, Traffic Routing, Session Affinity, Analytics and Monitoring.
+42. `Traffic Manager is an Azure service that enables you to control the distribution of user traffic to your specified endpoints`, which can be Azure resources or external resources. It works by directing incoming traffic to the closest or best-performing endpoint based on the chosen routing method (e.g., priority, weighted, geographic).`Traffic Manager is implemented globally and does not allow path-based routing.`
+43. Azure Load Balancer does not provide path-based routing (involves directing traffic to specific endpoints based on the URL path specified in the request. )
+44. `Azure Kubernetes Service RBAC Writer has access to secrets.` Azure Kubernetes Service RBAC Reader does not have access to secrets. Azure Kubernetes Service RBAC Cluster Admin and Azure Kubernetes Service RBAC Admin do not follow the principle of least privilege.
+45. `Azure Arc-enabled Kubernetes is the only configuration that includes Kubernetes and can be deployed to AWS.`
+46. A `SAS is the most secure way to access Azure Files by using REST calls`. A shared key allows any user with the key to access data. Microsoft Entra and Active Directory Domain Service (AD DS) are unsupported for REST calls.
+47. A service shared access signature (SAS) delegates access to a resource in just one of the storage services: Azure Blob Storage, Azure Queue Storage, Azure Table Storage, or Azure Files.
+48. Always Encrypted saves the encrypted data and only the client driver can decrypt it. TDE still allows users managing the database to see data.
+49. Dynamic data masking does not encrypt anything, it just masks data & user can use UNMASK permissions to see the data.
+50. `Append is used to add fields to existing properties.` Modify is used to add, update, or remove properties, it does not ensure that a field has value. `DeployIfNotExists is used to deploy resources.` Audit is used to check for compliance.
 
+###
 
+51. `Policies Can be assigned at the management group, subscription, resource group, or resource level.`
+52. `Initiatives (gr. of Policies, applied at higher level) assigned at the management group or subscription level, also at the resource group.`
+53. Defender EASM applies the crawling technology of Microsoft to discover assets that are related to your known online infrastructure and actively scans these assets to discover new connections over time.
+54. `Vulnerability assessment is supported for Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics.`
+55. Stopping the Syslog daemon on the virtual machine will stop the virtual machine from sending both Syslog and CEF messages.
+56. Configuring diagnostic settings and sending the logs to Azure Storage meets both the retention time and encryption requirements.
+57. `Event Grid can capture key rotation events from Key Vault and trigger an Azure function to generate a new key` in SQL and store it in Key Vault.
+58. `Purge protection prevents keys from being permanently deleted for a certain number of days`, and software-protected key vaults are less expensive than HSM-protected key vaults.
+59. `Soft delete allows for the recovery of deleted resources or data within a specified retention period.`
+60. Defender for Key Vault is used to alert for unusual and unplanned activities. Key Vault key expiration cannot be monitored by using action group alerts.
 
+###
 
+61. Key Vault Managed HSM supports importing keys generated in an on-premise HSM. Also, managed HSM does not store or process customer data outside the Azure region in which the customer deploys the HSM instance.
+62. `Key Vault Secrets User allows read access to secret content.`
+63. `Key Vault Crypto Officer (perform actions on encryption keys)` allows the user to perform actions on encryption keys, not secrets.
+64. `Key Vault Reader (read Metadata)` allows the user to read the metadata of key vaults and its certificates, keys, and secrets, but not to read sensitive values, such as secret contents or key material.
+65. `Key Vault Secrets Officer does not follow the principle of least privilege.`
 
-
-
-
-
-
-
-
-
+E.O.F
