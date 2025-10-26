@@ -1,4 +1,5 @@
-# Azure Sentinel: `SIEM & SOAR Tool`
+# Azure Sentinel: `SIEM & SOAR Tool` 
+- Like SIEM tools like Splunk.
 - Azure Sentinel, Microsoft's cloud-native SIEM solution, utilizes AI and ML to analyze diverse data sources like logs and alerts, enabling real-time detection and response to security threats.
 - `Log Analytics is Azure service that stores the log data` that is ingested into Microsoft Sentinel that stores the log data for Microsoft Sentinel.
 - After you onboard Microsoft Sentinel into your workspace, use `data connectors to start ingesting your data into Microsoft Sentinel.`
