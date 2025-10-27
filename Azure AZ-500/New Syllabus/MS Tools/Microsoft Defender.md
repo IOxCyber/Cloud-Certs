@@ -1,7 +1,8 @@
-# Defender for Cloud `Development security operations (DevSecOps), cloud security posture management (CSPM), cloud workload protection platform (CWPP) solution`
+### Defender for Cloud `Development security operations (DevSecOps), cloud security posture management (CSPM), cloud workload protection platform (CWPP) solution`
 
 
 ## 1. Configure Microsoft Defender for Servers:
+- A Cloud-Native Extended Detection and Response (XDR) and Cloud Workload Protection Platform (CWPP) tool.
 - Brings threat detection and advanced defenses to your `Windows and Linux machines that run in Azure, Amazon Web Services (AWS), Google Cloud Platform (GCP), and on-premises environments.`
 - plan includes the integrated license for Microsoft Defender for Endpoint, security baselines and OS level assessments, vulnerability assessment scanning, adaptive application controls (AAC), file integrity monitoring (FIM), and more.
 
